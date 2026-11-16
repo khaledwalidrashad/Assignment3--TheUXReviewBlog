@@ -1,0 +1,1018 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo:wght@400;500;600;700;800;900&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Exo", Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#home,
+#latest-articles,
+#authors,
+#community {
+    scroll-margin-top: 100px;
+}
+
+:root {
+    --ink: #080808;
+    --paper: #f5f5f5;
+    --yellow: #ffed82;
+    --gold: #ffc43d;
+    --orange: #f36b21;
+    --red: #e50918;
+    --blue: #1762ed;
+    --shadow: 5px 5px 0 var(--ink);
+    --shadow-small: 3px 3px 0 var(--ink);
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-color: #FFF085;
+    position: relative;
+    border: 2px solid black;
+}
+
+.header::after {
+    content: '';
+    width: 100px;
+    height: 100px;
+    background-color: #FFDC7D;
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    transform: rotate(45deg);
+}
+
+.header::before {
+    content: '';
+    width: 150px;
+    height: 150px;
+    background-color: #E6D878;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    transform: rotate(30deg);
+}
+
+.header-shape {
+    width: 120px;
+    height: 120px;
+    background-color: #F5D06F;
+    position: absolute;
+    bottom: 40px;
+    left: calc(50% - 60px);
+    transform: rotate(30deg);
+}
+
+
+nav.navbar {
+    width: 90%;
+    height: 75px;
+    background-color: white;
+    position: fixed;
+    z-index: 100;
+    top: 10px;
+    left: 5%;
+    right: 5%;
+    margin: 0;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 0px 20px;
+}
+
+.navbar-brand.novhead {
+    margin-right: 16px;
+    padding: 0;
+    color: inherit;
+    font-size: 32px;
+    font-weight: 900;
+    white-space: nowrap;
+}
+
+.navbar-brand.novhead:hover {
+    color: inherit;
+}
+
+.navbar-toggler {
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #FFD15B;
+    box-shadow: var(--shadow-small);
+}
+
+.navbar-toggler:focus {
+    box-shadow: var(--shadow-small);
+}
+
+.navbar-collapse {
+    flex-grow: 1;
+}
+
+.novlist {
+    margin-left: auto;
+}
+
+.novlist ul {
+    list-style: none;
+}
+
+.novlist ul li {
+    padding: 0px 5px;
+}
+
+.novlist a {
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+.novlist img {
+    width: 20px;
+    height: 20px;
+}
+
+.novlist a:hover {
+    color: tomato;
+}
+
+.novhead span {
+    color: tomato;
+}
+
+.novbutt {
+    margin-left: 12px;
+}
+
+.novbutt button {
+    padding: 8px 15px;
+    border-radius: 30px;
+    border: 2px solid black;
+    background-color: #FFD15B;
+    font-size: 16px;
+    font-weight: bold;
+    transition: transform 160ms ease;
+}
+
+.novbutt button:hover {
+    transform: translate(3px, 3px);
+}
+
+.header .head {
+    width: 90%;
+    position: absolute;
+    left: 5%;
+    right: 5%;
+    top: 120px;
+    z-index: 99;
+}
+
+.butt-trend {
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: var(--shadow-small);
+    transform: rotate(-2deg);
+    margin-bottom: 10px;
+}
+
+.h1-title {
+    font-size: 80px;
+    font-weight: 900;
+    line-height: 1.2;
+    text-shadow: var(--shadow-small);
+}
+
+.text-red {
+    color: var(--red);
+}
+
+.text-blue {
+    color: var(--blue);
+}
+
+.hero-description {
+    margin: 0 0 30px;
+    padding: 18px 20px;
+    border: 2px solid var(--ink);
+    background: white;
+    box-shadow: var(--shadow-small);
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 1.45;
+}
+
+.brutal-button {
+    position: relative;
+    padding: 15px 25px;
+    border: 2px solid var(--ink);
+    box-shadow: 4px 4px 0 var(--ink);
+    font-size: 17px;
+    font-weight: 800;
+    text-align: center;
+    transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.brutal-button img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.brutal-button:hover {
+    transform: translate(3px, 3px);
+    box-shadow: 1px 1px 0 var(--ink);
+}
+
+.button-dark {
+    background: var(--ink);
+    color: white;
+}
+
+.button-light {
+    background: white;
+}
+
+.hero-art-wrap {
+    position: relative;
+    padding: 0px 60px;
+}
+
+.hero-art {
+    height: 385px;
+    transform: rotate(3deg);
+}
+
+.hero-art img {
+    width: 100%;
+    height: 385px;
+    border: 2px solid black;
+    box-shadow: var(--shadow);
+    transition: transform 160ms ease;
+}
+
+.hero-art:hover img {
+    transform: translate(-5px, -5px);
+}
+
+.featured-label {
+    position: absolute;
+    top: 0px;
+    right: 40px;
+    padding: 10px 15px;
+    border: 2px solid var(--ink);
+    background: #ef3333;
+    box-shadow: var(--shadow-small);
+    color: white;
+    font-weight: 800;
+    transform: rotate(10deg);
+}
+
+.container .left .left1 p {
+    transform: rotate(2deg);
+    box-shadow: var(--shadow-small);
+}
+
+.container .left .left2 {
+    box-shadow: var(--shadow);
+}
+
+/* حركة الكارت */
+.container .left .left2,
+.container .left .left3,
+.container .left .left4 {
+    transition: transform 160ms ease;
+}
+
+.container .left .left2:hover,
+.container .left .left3:hover,
+.container .left .left4:hover {
+    transform: translate(-5px, -5px);
+}
+
+/* تغيير لون العنوان بلون الـ badge */
+.container .left .left2-content h2,
+.container .left .left3-content h2,
+.container .left .left4-content h2 {
+    transition: color 160ms ease;
+}
+
+.container .left .left2:hover .left2-content h2 {
+    color: #ef3333;
+    /* NEW */
+}
+
+.container .left .left3:hover .left3-content h2 {
+    color: blue;
+    /* HOT */
+}
+
+.container .left .left4:hover .left4-content h2 {
+    color: #AD46FF;
+    /* VIRAL */
+}
+
+.container .left .left2 .left2-img p {
+    width: fit-content;
+    background-color: #ef3333;
+    color: white;
+    padding: 0px 10px;
+    border: 2px solid black;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    transform: rotate(8deg);
+}
+
+.container .left .left2 .left2-content h5 {
+    background-color: #ffc43d;
+    width: fit-content;
+    color: black;
+    padding: 0px 10px;
+    border: 2px solid black;
+    box-shadow: var(--shadow-small);
+}
+
+.container .left .left2 .left2-content .details h6 img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.container .left .left3 {
+    box-shadow: var(--shadow);
+}
+
+.container .left .left3 .left3-img p {
+    width: fit-content;
+    background-color: blue;
+    color: white;
+    padding: 0px 10px;
+    border: 2px solid black;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    transform: rotate(-8deg);
+}
+
+.container .left .left3 .left3-content h5 {
+    background-color: #7BF1A8;
+    width: fit-content;
+    color: black;
+    padding: 0px 10px;
+    border: 2px solid black;
+    box-shadow: var(--shadow-small);
+}
+
+.container .left .left3 .left3-content .details h6 img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.container .left .left4 {
+    box-shadow: var(--shadow);
+}
+
+.container .left .left4 .left4-img p {
+    width: fit-content;
+    background-color: #AD46FF;
+    color: white;
+    padding: 0px 10px;
+    border: 2px solid black;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    transform: rotate(30deg);
+}
+
+.container .left .left4 .left4-content h5 {
+    background-color: #FDA5D5;
+    width: fit-content;
+    color: black;
+    padding: 0px 10px;
+    border: 2px solid black;
+    box-shadow: var(--shadow-small);
+}
+
+.container .left .left4 .left4-content .details h6 img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.container .left .left5 button {
+    box-shadow: var(--shadow);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    cursor: pointer;
+}
+
+.container .left .left5 button:hover {
+    transform: translate(5px, 5px);
+    box-shadow: none;
+}
+
+.container .right .right1 {
+    box-shadow: var(--shadow);
+}
+
+/* تنعيم حركة تغير اللون لعناوين التريند */
+.container .right .right1 a.fs-5 {
+    transition: color 0.2s ease;
+}
+
+/* العنصر الأول (01): أحمر مثل text-danger */
+.container .right .right1 .d-flex:nth-of-type(1):hover a.fs-5 {
+    color: var(--bs-danger, #dc3545);
+}
+
+/* العنصر الثاني (02): أخضر مثل text-success */
+.container .right .right1 .d-flex:nth-of-type(2):hover a.fs-5 {
+    color: var(--bs-success, #198754);
+}
+
+/* العنصر الثالث (03): سماوي مثل text-info */
+.container .right .right1 .d-flex:nth-of-type(3):hover a.fs-5 {
+    color: var(--bs-info, #0dcaf0);
+}
+
+.container .right .right2 {
+    box-shadow: var(--shadow);
+}
+
+.container .right .right2 .right2-item1 {
+    background-color: rgb(255, 223, 32, 0.5);
+    font-weight: bold;
+    font-size: 22px;
+    padding: 5px 20px;
+    border: 2px solid black;
+    margin-bottom: 10px;
+}
+
+.container .right .right2 .right2-item2 {
+    background-color: rgb(123, 241, 168, 0.5);
+    font-weight: bold;
+    font-size: 22px;
+    padding: 5px 20px;
+    border: 2px solid black;
+    margin-bottom: 10px;
+}
+
+.container .right .right2 .right2-item3 {
+    background-color: rgb(253, 165, 213, 0.5);
+    font-weight: bold;
+    font-size: 22px;
+    padding: 5px 20px;
+    border: 2px solid black;
+    margin-bottom: 10px;
+}
+
+.container .right .right2 .right2-item4 {
+    background-color: rgb(142, 197, 255, 0.5);
+    font-weight: bold;
+    font-size: 22px;
+    padding: 5px 20px;
+    border: 2px solid black;
+    margin-bottom: 10px;
+}
+
+.container .right .right2 .right2-item5 {
+    background-color: rgb(218, 178, 255, 0.5);
+    font-weight: bold;
+    font-size: 22px;
+    padding: 5px 20px;
+    border: 2px solid black;
+    margin-bottom: 10px;
+}
+
+/* حركة وانتقال وظل لعناصر التصنيفات */
+.container .right .right2 [class*="right2-item"] {
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+.container .right .right2 [class*="right2-item"]:hover {
+    box-shadow: var(--shadow-small);
+}
+
+/* إزالة الشفافية عند الـ Hover لكل عنصر بلونه الخاص */
+.container .right .right2 .right2-item1:hover {
+    background-color: rgb(255, 223, 32);
+}
+
+.container .right .right2 .right2-item2:hover {
+    background-color: rgb(123, 241, 168);
+}
+
+.container .right .right2 .right2-item3:hover {
+    background-color: rgb(253, 165, 213);
+}
+
+.container .right .right2 .right2-item4:hover {
+    background-color: rgb(142, 197, 255);
+}
+
+.container .right .right2 .right2-item5:hover {
+    background-color: rgb(218, 178, 255);
+}
+
+.authers {
+    background-color: #FFD230;
+    position: relative;
+    overflow: hidden;
+    /* لمنع أي شريط تمرير عند تدوير الأشكال */
+}
+
+/* لضمان بقاء محتوى الكروت فوق الأشكال الديكورية */
+.authers .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* الركن الأعلى الأيمن */
+.authers::before {
+    content: '';
+    width: 120px;
+    height: 120px;
+    background-color: #ffc43d;
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    transform: rotate(20deg);
+    z-index: 1;
+}
+
+/* الركن الأسفل الأيسر */
+.authers::after {
+    content: '';
+    width: 140px;
+    height: 140px;
+    background-color: #E6BC24;
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+    transform: rotate(-15deg);
+    z-index: 1;
+}
+
+.authers .container .line {
+    width: 100px;
+    height: 7px;
+    background-color: black;
+    margin: 0px auto;
+    transform: rotate(3deg);
+}
+
+/* --- الكارت الأول (ALEX BRUTAL) --- */
+.authers .container .card1 {
+    box-shadow: var(--shadow);
+    background-color: #FEF9C2;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.authers .container .card1:hover {
+    transform: translate(-5px, -5px);
+    box-shadow: 10px 10px 0 var(--ink);
+}
+
+.authers .container .card1 h3 {
+    transition: color 0.2s ease;
+}
+
+.authers .container .card1:hover h3 {
+    color: #FB2C36;
+    /* نفس لون بادج FOUNDER */
+}
+
+.authers .container .card1 .desk {
+    width: fit-content;
+    background-color: #FB2C36;
+    color: black;
+    padding: 0px 10px;
+    border: 2px solid black;
+    font-weight: bold;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    transform: rotate(8deg);
+}
+
+/* --- الكارت الثاني (ARNOLD REEVE) --- */
+.authers .container .card2 {
+    box-shadow: var(--shadow);
+    background-color: #DBFCE7;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.authers .container .card2:hover {
+    transform: translate(-5px, -5px);
+    box-shadow: 10px 10px 0 var(--ink);
+}
+
+.authers .container .card2 h3 {
+    transition: color 0.2s ease;
+}
+
+.authers .container .card2:hover h3 {
+    color: #2B7FFF;
+    /* نفس لون بادج LEAD */
+}
+
+.authers .container .card2 .desk {
+    width: fit-content;
+    background-color: #2B7FFF;
+    color: black;
+    padding: 0px 10px;
+    border: 2px solid black;
+    font-weight: bold;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    transform: rotate(-8deg);
+}
+
+/* --- الكارت الثالث (MIKE EDGE) --- */
+.authers .container .card3 {
+    box-shadow: var(--shadow);
+    background-color: #F3E5F5;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.authers .container .card3:hover {
+    transform: translate(-5px, -5px);
+    box-shadow: 10px 10px 0 var(--ink);
+}
+
+.authers .container .card3 h3 {
+    transition: color 0.2s ease;
+}
+
+.authers .container .card3:hover h3 {
+    color: #DB2B65;
+    /* نفس لون بادج VIRAL */
+}
+
+.authers .container .card3 .desk {
+    width: fit-content;
+    background-color: #DB2B65;
+    color: black;
+    padding: 0px 10px;
+    border: 2px solid black;
+    font-weight: bold;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    transform: rotate(30deg);
+}
+
+/* --- تنسيقات وتفاعلات أيقونات السوشيال ميديا لجميع الكروت --- */
+.card1-img,
+.card2-img,
+.card3-img {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    margin-right: 10px;
+    padding: 5px;
+    border: 2px solid black;
+    cursor: pointer;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+/* ظهور ظل صغير لليمين والأسفل عند الإشارة على الأيقونة */
+.card1-img:hover,
+.card2-img:hover,
+.card3-img:hover {
+    box-shadow: var(--shadow-small);
+    /* 3px 3px 0 var(--ink) */
+}
+
+/* تلوين كل أيقونة بلونها الرسمي الأصلي */
+img[src*="twitter"]:hover {
+    background-color: #1DA1F2;
+    /* أزرق تويتر */
+}
+
+img[src*="linkedin"]:hover {
+    background-color: #0A66C2;
+    /* كحلي لينكد إن */
+}
+
+img[src*="instagram"]:hover {
+    background-color: #E1306C;
+    /* وردي إنستغرام */
+}
+
+
+.reb {
+    background-color: rgb(245, 245, 245);
+}
+
+.reb .container .line {
+    width: 100px;
+    height: 7px;
+    background-color: black;
+    margin: 0px auto;
+    transform: rotate(3deg);
+}
+
+.reb .container .leftt .item .item1 {
+    border: 2px solid black;
+    padding: 10px 20px;
+    box-shadow: var(--shadow-small);
+}
+
+.reb .container .leftt .item p img {
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    padding: 5px;
+}
+
+.reb .container .leftt .item button {
+    padding: 10px 20px;
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    box-shadow: var(--shadow-small);
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.reb .container .leftt .item button:hover {
+    transform: translate(3px, 3px);
+    box-shadow: none;
+}
+
+.reb .container .leftt .item button img {
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    padding: 5px;
+}
+
+.reb .container .rightt .item {
+    box-shadow: var(--shadow);
+}
+
+.w-10 {
+    width: 75px;
+    height: 75px;
+    border: 2px solid black;
+}
+
+
+footer {
+    background-color: black;
+}
+
+footer .container a:hover {
+    color: #ffdc21;
+}
+
+.newsletter-form input,
+.newsletter-form button {
+    width: 100%;
+    min-height: 60px;
+    font: inherit;
+}
+
+.newsletter-form input {
+    margin-bottom: 20px;
+    padding: 14px 16px;
+    border: 1px solid #bdbdbd;
+    background: transparent;
+    color: white;
+}
+
+.newsletter-form input::placeholder {
+    color: #bdbdbd;
+    opacity: 1;
+}
+
+.newsletter-form button {
+    border: 0;
+    background: #ffdc21;
+    box-shadow: 4px 4px 0 #b89f00;
+    color: black;
+    font-weight: 800;
+}
+
+.newsletter-form button:hover {
+    background: #ffe34d;
+}
+
+footer .container .line2 {
+    width: 100%;
+    height: 5px;
+    background-color: white;
+    margin-top: 20px;
+}
+
+@media (max-width: 767.98px) {
+    .header {
+        height: auto;
+        min-height: 100vh;
+        padding: 140px 0 40px;
+    }
+
+    .header .head {
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .h1-title {
+        font-size: clamp(2.5rem, 10vw, 4rem);
+        line-height: 1.05;
+    }
+
+    .hero-description {
+        font-size: 18px;
+    }
+
+    .hero-art-wrap {
+        padding: 30px 20px 0;
+    }
+
+    .hero-art,
+    .hero-art img {
+        height: 260px;
+    }
+
+    .featured-label {
+        right: 5px;
+    }
+
+    .container .left .left2-img,
+    .container .left .left3-img,
+    .container .left .left4-img {
+        padding-bottom: 0;
+    }
+
+    footer .container .mt-4>div:first-child p {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 991.98px) {
+    nav.navbar {
+        width: 94%;
+        height: auto;
+        min-height: 75px;
+        top: 10px;
+        left: 3%;
+        right: 3%;
+        margin: 0;
+        padding: 10px 14px;
+    }
+
+    .navbar-brand.novhead {
+        font-size: 24px;
+    }
+
+    .navbar-collapse {
+        position: absolute;
+        top: calc(100% + 10px);
+        left: 0;
+        width: 100%;
+        padding: 12px;
+        border: 2px solid black;
+        border-radius: 20px;
+        background: white;
+        box-shadow: var(--shadow-small);
+    }
+
+    .novlist {
+        width: 100%;
+        margin: 0;
+    }
+
+    .novlist ul {
+        align-items: stretch;
+        margin: 0;
+    }
+
+    .novlist ul .nav-item {
+        width: 100%;
+        padding: 0;
+    }
+
+    .novlist a {
+        display: block;
+        padding: 9px 12px;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .novlist ul .nav-item:not(:last-child) {
+        border-bottom: 1px solid #dddddd;
+    }
+
+    .novbutt {
+        margin: 12px 0 0;
+    }
+
+    .novbutt button {
+        width: 100%;
+        padding: 7px 10px;
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .navbar-brand.novhead {
+        font-size: 26px;
+    }
+
+    .novlist ul li {
+        padding: 0 2px;
+    }
+
+    .novlist a {
+        font-size: 15px;
+    }
+
+    .novbutt {
+        margin-left: 6px;
+    }
+
+    .novbutt button {
+        padding: 7px 10px;
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-collapse {
+        justify-content: flex-end;
+    }
+
+    .novlist {
+        position: absolute;
+        left: 50%;
+        margin-left: 0;
+        transform: translateX(-50%);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .h1-title {
+        font-size: 58px;
+    }
+
+    .hero-art-wrap {
+        padding: 0 25px;
+    }
+
+    .hero-art,
+    .hero-art img {
+        height: 300px;
+    }
+}
+
+@media (max-width: 359.98px) {
+    .navbar-brand.novhead {
+        font-size: 20px;
+    }
+
+    .novbutt button {
+        padding: 6px 8px;
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 768px) and (max-height: 850px) {
+    .header {
+        height: auto;
+        min-height: 100vh;
+        padding: 120px 0 40px;
+    }
+
+    .header .head {
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 768px) {
+    .container .right {
+        position: sticky;
+        top: 105px;
+        align-self: flex-start;
+    }
+}
